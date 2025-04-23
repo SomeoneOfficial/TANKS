@@ -9,7 +9,7 @@ First add this to index.html
 <meta name="mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="default">
 <link rel="icon-192x192.png" href="icon-192x192.png">
-<meta name="Appel MMO Mobile" content="Appel MMO Mobile">
+<meta name="TANK Mobile" content="TANK Mobile">
 
 
 also add this under <scripts> in index.html

@@ -2,7 +2,6 @@
 <html lang="en-us">
   <head>
   
-  
   <!-- PWA Manifest -->
   <link rel="manifest" href="manifest.json">
 
@@ -11,7 +10,7 @@
 <meta name="mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="default">
 <link rel="icon-192x192.png" href="icon-192x192.png">
-<meta name="TANKS Mobile" content="TANKS Mobile">
+<meta name="TANK Mobile" content="TANK Mobile">
 
 
     <meta charset="utf-8">
@@ -38,15 +37,11 @@
     </div>
     <script>
 	
-	
-	
-if ('serviceWorker' in navigator) {
+	if ('serviceWorker' in navigator) {
   navigator.serviceWorker.register('/sw.js')
     .then(reg => console.log("Service Worker registered!", reg))
     .catch(err => console.error("Service Worker error:", err));
 }
-
-
 
 
       var canvas = document.querySelector("#unity-canvas");
@@ -77,12 +72,12 @@ if ('serviceWorker' in navigator) {
       }
 
       var buildUrl = "Build";
-      var loaderUrl = buildUrl + "/Tanks v2.loader.js";
+      var loaderUrl = buildUrl + "/TANKS.loader.js";
       var config = {
         arguments: [],
-        dataUrl: buildUrl + "/Tanks v2.data",
-        frameworkUrl: buildUrl + "/Tanks v2.framework.js",
-        codeUrl: buildUrl + "/Tanks v2.wasm",
+        dataUrl: buildUrl + "/TANKS.data",
+        frameworkUrl: buildUrl + "/TANKS.framework.js",
+        codeUrl: buildUrl + "/TANKS.wasm",
         streamingAssetsUrl: "StreamingAssets",
         companyName: "DefaultCompany",
         productName: "Tanks",
