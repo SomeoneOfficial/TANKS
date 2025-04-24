@@ -2,8 +2,7 @@
 <html lang="en-us">
   <head>
   
-  
-<!-- PWA Manifest -->
+  <!-- PWA Manifest -->
   <link rel="manifest" href="manifest.json">
 
   
@@ -12,7 +11,6 @@
 <meta name="apple-mobile-web-app-status-bar-style" content="default">
 <link rel="icon-192x192.png" href="icon-192x192.png">
 <meta name="TANK Mobile" content="TANK Mobile">
-
 
 
     <meta charset="utf-8">
@@ -39,13 +37,11 @@
     </div>
     <script>
 	
-	
 	if ('serviceWorker' in navigator) {
   navigator.serviceWorker.register('sw.js')
     .then(reg => console.log("Service Worker registered!", reg))
     .catch(err => console.error("Service Worker error:", err));
 }
-
 
 
       var canvas = document.querySelector("#unity-canvas");
